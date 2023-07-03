@@ -11,6 +11,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
+        // app bar replace material by skafold
         color: Colors.white, // background color
         child: SingleChildScrollView(
           child: Column(
@@ -41,11 +42,16 @@ class _LoginPageState extends State<LoginPage> {
                         hintText: "Enter username",
                         labelText: "Username",
                       ),
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return "Username can't be empty";
+                        }
+                        return null;
+                      },
                       onChanged: (value) {
                         name = value;
                         // only for statefull widget
-                        setState(() {
-                        });
+                        setState(() {});
                       },
                     ),
                     TextFormField(
@@ -54,6 +60,14 @@ class _LoginPageState extends State<LoginPage> {
                         hintText: "Enter password",
                         labelText: "Password",
                       ),
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return "Password can't be empty";
+                        } else if (value.length < 6) {
+                          return "Password length should be greater than 6 digits";
+                        }
+                        return null;
+                      },
                     ),
                   ],
                 ),
@@ -68,14 +82,16 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(
                 height: 40.0,
               ),
+              ElevatedButton(
+                //you can use container and add animation to it
 
-               ElevatedButton(           //you can use container and add animation to it
-           
-                onPressed: () {
-                  Navigator.pushNamed(
-                      context,
-                      MyRoutes
-                          .homeRoute); //from one screen to other push aage jao and pop peeche jao
+                onPressed: () async {
+                  
+                    await Future.delayed(const Duration(seconds: 1));
+                    // ignore: use_build_context_synchronously
+                    await Navigator.pushNamed(
+                        context, MyRoutes.homeRoute); //from one screen to other push aage jao and pop peeche jao
+      
                 },
                 child: Text("Login"),
                 style: TextButton.styleFrom(minimumSize: const Size(150, 40)),
