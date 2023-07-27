@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class MyDrawer extends StatelessWidget {
   @override
@@ -19,8 +18,8 @@ class MyDrawer extends StatelessWidget {
                   decoration: const BoxDecoration(
                     color: Color.fromARGB(255, 28, 181, 227)
                   ),
-                  accountName:  Text("Arin"),
-                  accountEmail: Text("arin@gmail.com"),
+                  accountName:  const Text("Arin"),
+                  accountEmail: const Text("arin@gmail.com"),
                   currentAccountPicture:CircleAvatar(
                     backgroundImage:NetworkImage(imageUrl) ),
                 )
