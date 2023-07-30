@@ -1,0 +1,72 @@
+{
+    "products": [
+      {
+        
+        "id": 1,
+        "name": "iPhone 13",
+        "price": 65000,
+        "desc": "The latest iPhone with A15 Bionic chip and advanced dual-camera system.",
+        "color": "#33505a",
+        "image": "https://th.bing.com/th/id/OIP.Nc8VRBsJKAB4D2H9NIZhtwHaHa?pid=ImgDet&rs=1"
+      },
+      {
+        "id": 2,
+        "name": "iPhone 13 mini",
+        "price": 65000,
+        "desc": "Compact and powerful iPhone 13 mini with 5G capability.",
+        "color": "#33505a",
+        "image": "https://example.com/iphone13mini.jpg"
+      },
+      {
+        "id": 3,
+        "name": "iPhone 13 Pro",
+        "price": 90000,
+        "desc": "Pro-level iPhone 13 Pro with ProMotion display and triple-camera system.",
+        "color": "#33505a",
+        "image": "https://example.com/iphone13pro.jpg"
+      },
+      {
+        "id": 4,
+        "name": "iPhone 13 Pro Max",
+        "price": 110000,
+        "desc": "Largest iPhone with powerful performance and stunning design.",
+        "color": "#33505a",
+        "image": "https://example.com/iphone13promax.jpg"
+      },
+      {
+        "id": 5,
+        "name": "iPhone 14",
+        "price": 80000,
+        "desc": "The next-generation iPhone with revolutionary features and powerful performance.",
+        "color": "#33505a",
+        "image": "https://example.com/iphone14.jpg"
+      },
+      {
+        "id": 6,
+        "name": "iPhone 14 Pro",
+        "price": 125000,
+        "desc": "Pro-level iPhone 14 Pro with enhanced camera capabilities and ProMotion display.",
+        "color": "#33505a",
+        "image": "https://example.com/iphone14pro.jpg"
+      },
+      {
+        "id": 7,
+        "name": "iPhone 14 Pro Max",
+        "price": 150000,
+        "desc": "Largest and most advanced iPhone 14 Pro Max for professional users.",
+        "color": "#33505a",
+        "image": "https://example.com/iphone14promax.jpg"
+      },
+
+      {
+        
+        "id": 8,
+        "name": "iPhone 11",
+        "price": 45000,
+        "desc": "Apple iPhone 11th Gen.",
+        "color": "#33505a",
+        "image": "https://www.elgiganten.dk/image/dv_web_D180001002276668/52787/iphone-11-64-gb-hvid.jpg?"
+      }
+    ]
+  }
+  

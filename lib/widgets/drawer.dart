@@ -18,8 +18,8 @@ class MyDrawer extends StatelessWidget {
                   decoration: const BoxDecoration(
                     color: Color.fromARGB(255, 28, 181, 227)
                   ),
-                  accountName:  Text("Arin"),
-                  accountEmail: Text("arin@gmail.com"),
+                  accountName:  const Text("Arin"),
+                  accountEmail: const Text("arin@gmail.com"),
                   currentAccountPicture:CircleAvatar(
                     backgroundImage:NetworkImage(imageUrl) ),
                 )
